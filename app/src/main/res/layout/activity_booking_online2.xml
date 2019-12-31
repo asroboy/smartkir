@@ -1,255 +1,263 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BookingOnline2">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="318dp"
-        android:layout_height="64dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="637dp"
-        app:srcCompat="@drawable/smartkir" />
-
-    <TableLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="628dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="2dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="318dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/smartkir" />
 
-            <TextView
-                android:id="@+id/no_uji"
-                android:layout_width="124dp"
-                android:layout_height="wrap_content"
-                android:text="No Uji"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="628dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="2dp">
 
-            <EditText
-                android:id="@+id/nomor_uji"
-                android:layout_width="285dp"
-                android:layout_height="30dp"
-                android:textSize="14sp" />
-        </TableRow>
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/no_uji"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:text="No Uji"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/No_kendaraan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No Kendaraan"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/nomor_uji"
+                    android:layout_width="285dp"
+                    android:layout_height="30dp"
+                    android:textSize="14sp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/Nomor_Kendaraan"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:textSize="14sp" />
-        </TableRow>
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/No_kendaraan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Kendaraan"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/Nama_pemilik"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nama Pemilik"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/Nomor_Kendaraan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="14sp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/Nama_pemilik1"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp" />
-        </TableRow>
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/Nama_pemilik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pemilik"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/Alamat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Alamat"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/Nama_pemilik1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/Alamat1"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:textSize="14sp" />
-        </TableRow>
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/Alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/No_rangka"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No Rangka"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/Alamat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="14sp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/Nomor_rangka"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:textSize="14sp" />
-        </TableRow>
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/No_rangka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Rangka"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/no_mesin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No Mesin"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/Nomor_rangka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="14sp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/no_mesin1"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:textSize="14sp" />
-        </TableRow>
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/no_mesin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Mesin"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/Jenis"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jenis"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/no_mesin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="14sp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/Jenis1"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:textSize="14sp" />
-        </TableRow>
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/Jenis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/Merek"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:text="Merek"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/Jenis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="14sp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/Merek1"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:textSize="14sp" />
-        </TableRow>
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/Merek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Merek"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/Tipe"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:text="Tipe"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/Merek1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="14sp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/Tipe1"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:textSize="14sp" />
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-        </TableRow>
+                <TextView
+                    android:id="@+id/Tipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Tipe"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+                <EditText
+                    android:id="@+id/Tipe1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/berlaku"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Berlaku S.D"
-                android:textColor="#000000"
-                android:textSize="16dp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/berlaku1"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:textSize="14sp" />
-        </TableRow>
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-        <TableRow
-            android:layout_width="251dp"
-            android:layout_height="85dp"
-            android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/berlaku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berlaku S.D"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/retribusi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Retribusi Rp."
-                android:textColor="#000000"
-                android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/berlaku1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="14sp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/retribusi1"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:textSize="14sp" />
-        </TableRow>
+            <TableRow
+                android:layout_width="251dp"
+                android:layout_height="85dp"
+                android:gravity="center_vertical">
 
-    </TableLayout>
+                <TextView
+                    android:id="@+id/retribusi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retribusi Rp."
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
 
-</RelativeLayout>
+                <EditText
+                    android:id="@+id/retribusi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="14sp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu">
+    tools:context=".InformasiActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,54 +20,34 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            app:srcCompat="@drawable/logodishub" />
-
-        <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:layout_marginTop="50dp"
             app:srcCompat="@drawable/smartkir" />
 
         <Button
-            android:id="@+id/cekKIR"
+            android:id="@+id/carapenggunaan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="50dp"
             android:background="@color/colorPrimaryDark"
             android:fontFamily="@font/aldrich"
-            android:onClick="pindah1"
-            android:text="CEK KIR"
+            android:padding="5dp"
+            android:text="Cara Penggunaan"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/bookingonline"
+            android:id="@+id/caraKIR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:background="@color/colorPrimaryDark"
             android:fontFamily="@font/aldrich"
-            android:onClick="pindah2"
-            android:text="BOOKING ONLINE"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="@font/aldrich"
-            android:onClick="keHalamanInformasi"
-            android:text="INFORMASI"
+            android:padding="5dp"
+            android:text="Cara KIR"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />

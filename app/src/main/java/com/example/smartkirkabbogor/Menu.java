@@ -18,13 +18,18 @@ public class Menu extends AppCompatActivity {
     }
 
     public void pindah1(View view) {
-        Intent intent = new Intent(Menu.this, cekKIR.class);
+        Intent intent = new Intent(Menu.this, CekKIRActivity.class);
         startActivity(intent);
 
     }
 
     public void pindah2(View view) {
         Intent intent = new Intent(Menu.this, BookingOnline1.class);
+        startActivity(intent);
+    }
+
+    public void keHalamanInformasi(View view) {
+        Intent intent = new Intent(Menu.this, InformasiActivity.class);
         startActivity(intent);
     }
 }
